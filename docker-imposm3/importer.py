@@ -39,7 +39,7 @@ default = {
     'DATABASE': 'gis',
     'HOST': 'db',
     'PORT': '5432',
-    'SETTINGS': 'settings',
+    'SETTINGS': '/PBF',
     'CACHE': 'cache',
     'IMPORT_DONE': 'import_done',
     'IMPORT_QUEUE': 'import_queue',
