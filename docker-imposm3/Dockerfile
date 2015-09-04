@@ -4,6 +4,7 @@ MAINTAINER Etienne Trimaille <etienne@kartoza.com>
 RUN apt-get update && apt-get install -y python-pip \
       libprotobuf-dev libleveldb-dev libgeos-dev \
       libpq-dev python-dev \
+      libyaml-dev\
       --no-install-recommends
 
 RUN ln -s /usr/lib/libgeos_c.so /usr/lib/libgeos.so
