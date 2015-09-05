@@ -35,6 +35,8 @@ RUN pip install -r /home/requirements.txt
 
 ADD importer.py /home/
 
+RUN mkdir /home/cache
+
 VOLUME ["/PBF"]
 WORKDIR /home
 CMD ["python", "-u", "/home/importer.py"]
