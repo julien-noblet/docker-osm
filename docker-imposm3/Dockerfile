@@ -7,6 +7,22 @@ RUN apt-get update && apt-get install -y python-pip \
       libyaml-dev\
       --no-install-recommends
 
+ENV TIME 120
+ENV USER docker
+ENV PASSWORD docker
+ENV DATABASE gis
+ENV HOST db
+ENV PORT 5432
+ENV SETTINGS /PBF
+ENV CACHE cache
+ENV IMPORT_DONE import_done
+ENV IMPORT_QUEUE import_queue
+ENV SRID 4326
+ENV OPTIMIZE false
+ENV DBSCHEMA_PRODUCTION public
+ENV DBSCHEMA_IMPORT import
+ENV DBSCHEMA_BACKUP backup
+
 RUN ln -s /usr/lib/libgeos_c.so /usr/lib/libgeos.so
 
 WORKDIR $GOPATH
